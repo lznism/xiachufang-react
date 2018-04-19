@@ -100,6 +100,9 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "babel-plugin-transform-decorators-legacy": "^1.3.4"
-  }
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^7.0.1"
+  },
+  "proxy": "http://localhost:3000"
 }
