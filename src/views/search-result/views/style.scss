@@ -1,0 +1,7 @@
+@function r($px) {
+  @return $px / 75 + rem;
+}
+
+.search {
+  margin-bottom: r(20);
+}

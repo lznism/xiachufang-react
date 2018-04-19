@@ -4,16 +4,18 @@ import './index.scss';
 import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
 import store from './store';
-import { BrowserRouter, Route, Redirect } from 'react-router-dom';
+import { Router, Route, Redirect } from 'react-router-dom';
+import history from './utils/history';
 import { view as Home } from './views/home';
 import { view as Category } from './views/category';
 import { view as CategoryItem } from './views/category-item';
 import { view as MenuItem } from './views/menu-item';
 import { view as RankDetail } from './views/rank-detail';
+import { view as SearchResult } from './views/search-result';
 
 ReactDOM.render((
     <Provider store={store}>
-        <BrowserRouter>
+        <Router history={history}>
             <div>
                 <Route path="/" component={Home} exact></Route>
                 <Route path="/category" component={Category} exact></Route>
@@ -24,8 +26,9 @@ ReactDOM.render((
                 <Route path="/category/:id/recent" component={CategoryItem}></Route>
                 <Route path="/recipe/:id" component={MenuItem}></Route>
                 <Route path="/explore/:type" component={RankDetail}></Route>
+                <Route path="/search" component={SearchResult}></Route>
             </div>
-        </BrowserRouter>
+        </Router>
     </Provider>
 ), document.getElementById('root'));
 registerServiceWorker();
