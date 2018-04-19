@@ -13,7 +13,6 @@ import { getHome } from '../actions';
 )
 export default class Recommend extends React.Component {
     componentDidMount() {
-        console.log(this.props);
         this.props.getHome();
     }
     render() {

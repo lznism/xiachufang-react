@@ -1,0 +1,30 @@
+@function r($px) {
+    @return $px / 75 + rem;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 r(42);
+    height: r(144);
+
+    .title {
+        font-size: r(46);
+        color: #383835;
+        height: r(144);
+        line-height: r(144);
+    }
+
+    .choice {
+        font-size: r(28);
+        height: r(144);
+        line-height: r(144);
+
+        .welcome {
+            padding-right: r(10);
+        }
+
+        .router-active {
+            color: #f9674e;
+        }
+    }
+}
