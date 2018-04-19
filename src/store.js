@@ -5,12 +5,14 @@ import { reducer as homeReducer } from './views/home';
 import { reducer as categoryReducer } from './views/category';
 import { reducer as categoryItemReducer } from './views/category-item';
 import { reducer as menuItemReducer } from './views/menu-item';
+import { reducer as rankDetailReducer } from './views/rank-detail';
 
 const reducer = combineReducers({
     home: homeReducer,
     category: categoryReducer,
     categoryItem: categoryItemReducer,
-    menuItem: menuItemReducer
+    menuItem: menuItemReducer,
+    rankDetail: rankDetailReducer
 });
 
 const logger = createLogger({});

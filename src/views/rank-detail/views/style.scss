@@ -1,0 +1,38 @@
+@function rem($px) {
+  @return $px / 75 + rem;
+}
+h1 {
+  font-size: rem(46);
+  color: #333;
+  margin-bottom: rem(80);
+}
+.rank-detail {
+  padding: 0 rem(40);
+}
+.menu-pic {
+  width: rem(670);
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: rem(60);
+
+  .avatar {
+    width: rem(106);
+    height: rem(106);
+    border-radius: 50%;
+  }
+
+  .title {
+    font-size: rem(40);
+    font-weight: bold;
+  }
+
+  .author,
+  .doneNum {
+    font-size: rem(28);
+  }
+}
+.list li {
+  margin-bottom: rem(50);
+}

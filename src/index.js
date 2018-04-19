@@ -9,6 +9,7 @@ import { view as Home } from './views/home';
 import { view as Category } from './views/category';
 import { view as CategoryItem } from './views/category-item';
 import { view as MenuItem } from './views/menu-item';
+import { view as RankDetail } from './views/rank-detail';
 
 ReactDOM.render((
     <Provider store={store}>
@@ -22,6 +23,7 @@ ReactDOM.render((
                 <Route path="/category/:id/pop" component={CategoryItem}></Route>
                 <Route path="/category/:id/recent" component={CategoryItem}></Route>
                 <Route path="/recipe/:id" component={MenuItem}></Route>
+                <Route path="/explore/:type" component={RankDetail}></Route>
             </div>
         </BrowserRouter>
     </Provider>
