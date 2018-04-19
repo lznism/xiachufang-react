@@ -2,9 +2,11 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import { reducer as homeReducer } from './views/home';
+import { reducer as categoryReducer } from './views/category';
 
 const reducer = combineReducers({
-    home: homeReducer
+    home: homeReducer,
+    category: categoryReducer
 });
 
 const logger = createLogger({});

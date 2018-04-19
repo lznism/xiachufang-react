@@ -53,6 +53,7 @@ const Category = () => (
                 ))
             }
         </div>
+        <Link className="all-category" to="/category">全部菜谱分类</Link>
     </section>
 );
 
