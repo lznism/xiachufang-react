@@ -4,11 +4,13 @@ import { createLogger } from 'redux-logger';
 import { reducer as homeReducer } from './views/home';
 import { reducer as categoryReducer } from './views/category';
 import { reducer as categoryItemReducer } from './views/category-item';
+import { reducer as menuItemReducer } from './views/menu-item';
 
 const reducer = combineReducers({
     home: homeReducer,
     category: categoryReducer,
-    categoryItem: categoryItemReducer
+    categoryItem: categoryItemReducer,
+    menuItem: menuItemReducer
 });
 
 const logger = createLogger({});

@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 import { view as Home } from './views/home';
 import { view as Category } from './views/category';
 import { view as CategoryItem } from './views/category-item';
+import { view as MenuItem } from './views/menu-item';
 
 ReactDOM.render((
     <Provider store={store}>
@@ -20,6 +21,7 @@ ReactDOM.render((
                 )}></Route>
                 <Route path="/category/:id/pop" component={CategoryItem}></Route>
                 <Route path="/category/:id/recent" component={CategoryItem}></Route>
+                <Route path="/recipe/:id" component={MenuItem}></Route>
             </div>
         </BrowserRouter>
     </Provider>
